@@ -10,7 +10,6 @@ data = {"region": {
     'population': 66622705,
     'totalHospitalBeds': 1380614
 }
-
 # Normalization of days
 def normalize(data):
 
@@ -20,7 +19,6 @@ def normalize(data):
     return data.get('timeToElapse') * 7
   if data.get('periodType') == 'months':
     return data.get('timeToElapse') * 30
-
 # The estimator
 def estimator(data):
     result={'data': data, "impact": {}, "severeImpact": {}}
@@ -66,5 +64,3 @@ def estimator(data):
 
 
     return result
-
-print(estimator(data))
