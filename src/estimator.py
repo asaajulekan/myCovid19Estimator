@@ -33,7 +33,7 @@ def estimator(data):
     result['severeImpact']['currentlyInfected'] * (2 ** int(days / 3)))
 
     # Severe cases by requested time
-    result['severeImpact']['severeCasesByRequestedTime']=int( \
+    result['severeImpact']['severeCasesByRequestedTime']=int(
         0.15 * result['severeImpact']['infectionsByRequestedTime'])
     result['severeImpact']['severeCasesByRequestedTime']=int(
     0.15 * result['severeImpact']['infectionsByRequestedTime'])
@@ -61,6 +61,5 @@ def estimator(data):
     * data['region']['avgDailyIncomePopulation'] * data['region']['avgDailyIncomeInUSD']) / days)
     result['severeImpact']['dollarsInFlight']=int((result['severeImpact']['infectionsByRequestedTime']
     * data['region']['avgDailyIncomePopulation'] * data['region']['avgDailyIncomeInUSD']) / days)
-
 
     return result
