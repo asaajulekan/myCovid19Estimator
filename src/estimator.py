@@ -1,4 +1,5 @@
-
+def estimator(data):
+  return data
 data={"region": {
     "name": "Africa",
     "avgAge": 19.7,
@@ -40,7 +41,6 @@ def estimator(data):
     output['severeImpact']['dollarsInFlight'] = (int(output['severeImpact'][ "infectionByRequestedTime"])*0.65 *1.5)/30
   
     return output
-
 
 data={"region": {
     "name": "Africa",
@@ -88,3 +88,4 @@ def estimator(data):
 
 
 
+ 
