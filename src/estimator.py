@@ -66,4 +66,4 @@ def estimator(data):
 
     return output
 
-
+print("https://sbpythonista.github.io/covid19EstimatorUI./")
